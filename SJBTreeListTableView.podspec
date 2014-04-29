@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/zjjzmw1/SJBTreeListTableView.git", :tag => "0.0.1" }
   s.ios.deployment_target = "5.0"
   s.osx.deployment_target = "10.7"
-  s.source_files = "SJBTreeListTableView/SJBTreeListTableViewController.{h,m}"
+  s.source_files = "SJBTreeListTableView/SJBBaseTreeListViewController.{h,m}"
   s.resources = "SJBTreeListTableView/*.png"
   s.requires_arc = true
 end
