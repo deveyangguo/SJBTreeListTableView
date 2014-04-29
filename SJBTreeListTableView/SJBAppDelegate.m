@@ -7,7 +7,7 @@
 //
 
 #import "SJBAppDelegate.h"
-
+#import "SJBTestTreeListViewController.h"
 @implementation SJBAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -16,6 +16,11 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    SJBTestTreeListViewController *testVC = [[SJBTestTreeListViewController alloc]init];
+    UINavigationController *navi = [[UINavigationController alloc]initWithRootViewController:testVC];
+    self.window.rootViewController = navi;
+    
     return YES;
 }
 

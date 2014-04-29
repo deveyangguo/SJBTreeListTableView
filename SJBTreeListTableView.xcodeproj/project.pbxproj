@@ -19,6 +19,10 @@
 		1822CB33190F47F1009265DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1822CB1B190F47F1009265DB /* UIKit.framework */; };
 		1822CB3B190F47F1009265DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1822CB39190F47F1009265DB /* InfoPlist.strings */; };
 		1822CB3D190F47F1009265DB /* SJBTreeListTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1822CB3C190F47F1009265DB /* SJBTreeListTableViewTests.m */; };
+		1822CB48190F49D3009265DB /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = 1822CB46190F49D3009265DB /* close.png */; };
+		1822CB49190F49D3009265DB /* open.png in Resources */ = {isa = PBXBuildFile; fileRef = 1822CB47190F49D3009265DB /* open.png */; };
+		1822CB4C190F4C7C009265DB /* SJBBaseTreeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1822CB4B190F4C7C009265DB /* SJBBaseTreeListViewController.m */; };
+		1822CB4F190F5101009265DB /* SJBTestTreeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1822CB4E190F5101009265DB /* SJBTestTreeListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,12 @@
 		1822CB38190F47F1009265DB /* SJBTreeListTableViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SJBTreeListTableViewTests-Info.plist"; sourceTree = "<group>"; };
 		1822CB3A190F47F1009265DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1822CB3C190F47F1009265DB /* SJBTreeListTableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJBTreeListTableViewTests.m; sourceTree = "<group>"; };
+		1822CB46190F49D3009265DB /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
+		1822CB47190F49D3009265DB /* open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = open.png; sourceTree = "<group>"; };
+		1822CB4A190F4C7C009265DB /* SJBBaseTreeListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJBBaseTreeListViewController.h; sourceTree = "<group>"; };
+		1822CB4B190F4C7C009265DB /* SJBBaseTreeListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJBBaseTreeListViewController.m; sourceTree = "<group>"; };
+		1822CB4D190F5101009265DB /* SJBTestTreeListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJBTestTreeListViewController.h; sourceTree = "<group>"; };
+		1822CB4E190F5101009265DB /* SJBTestTreeListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJBTestTreeListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +117,11 @@
 		1822CB1D190F47F1009265DB /* SJBTreeListTableView */ = {
 			isa = PBXGroup;
 			children = (
+				1822CB50190F5130009265DB /* BaseTreeListViewController */,
 				1822CB26190F47F1009265DB /* SJBAppDelegate.h */,
 				1822CB27190F47F1009265DB /* SJBAppDelegate.m */,
+				1822CB4D190F5101009265DB /* SJBTestTreeListViewController.h */,
+				1822CB4E190F5101009265DB /* SJBTestTreeListViewController.m */,
 				1822CB29190F47F1009265DB /* Images.xcassets */,
 				1822CB1E190F47F1009265DB /* Supporting Files */,
 			);
@@ -118,6 +131,8 @@
 		1822CB1E190F47F1009265DB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1822CB46190F49D3009265DB /* close.png */,
+				1822CB47190F49D3009265DB /* open.png */,
 				1822CB1F190F47F1009265DB /* SJBTreeListTableView-Info.plist */,
 				1822CB20190F47F1009265DB /* InfoPlist.strings */,
 				1822CB23190F47F1009265DB /* main.m */,
@@ -142,6 +157,15 @@
 				1822CB39190F47F1009265DB /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1822CB50190F5130009265DB /* BaseTreeListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1822CB4A190F4C7C009265DB /* SJBBaseTreeListViewController.h */,
+				1822CB4B190F4C7C009265DB /* SJBBaseTreeListViewController.m */,
+			);
+			name = BaseTreeListViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +244,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1822CB48190F49D3009265DB /* close.png in Resources */,
+				1822CB49190F49D3009265DB /* open.png in Resources */,
 				1822CB22190F47F1009265DB /* InfoPlist.strings in Resources */,
 				1822CB2A190F47F1009265DB /* Images.xcassets in Resources */,
 			);
@@ -240,6 +266,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1822CB4F190F5101009265DB /* SJBTestTreeListViewController.m in Sources */,
+				1822CB4C190F4C7C009265DB /* SJBBaseTreeListViewController.m in Sources */,
 				1822CB28190F47F1009265DB /* SJBAppDelegate.m in Sources */,
 				1822CB24190F47F1009265DB /* main.m in Sources */,
 			);
@@ -315,7 +343,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -347,7 +375,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -361,6 +389,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SJBTreeListTableView/SJBTreeListTableView-Prefix.pch";
 				INFOPLIST_FILE = "SJBTreeListTableView/SJBTreeListTableView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -374,6 +403,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SJBTreeListTableView/SJBTreeListTableView-Prefix.pch";
 				INFOPLIST_FILE = "SJBTreeListTableView/SJBTreeListTableView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
